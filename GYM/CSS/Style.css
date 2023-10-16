@@ -1,0 +1,182 @@
+body {font-family: 'Balsamiq Sans', cursive;}
+
+* {box-sizing: border-box}
+
+/*--------------------------- Start Navbar --------------------------------*/
+.Navbar {background-color: #171819; position: fixed; width: 100%; top: 0; left: 0; z-index: 10}
+.Navbar .container {display: flex;}
+.Navbar .right {width: 80%;}
+.Navbar .right .bar {float: right; display: none; width: 47px; height: 35px; background: none; border-radius: 5px; border: 1px solid #333; margin-top: 11px; padding: 9px 10px 11px; cursor: pointer;}
+.Navbar .right .bar span {display: block; height: 2px; background-color: #e32518; margin-bottom: 5px}
+.Navbar .right ul {margin: 0!important; text-align: right}
+.Navbar .right ul li {color: #FFF; cursor: pointer; display: inline-block; font-size: 18px; padding: 15px; position: relative;}
+.Navbar .right ul li a {color: #FFF}
+.Navbar .right ul li:hover a,
+.Navbar .right ul i:hover,
+.Navbar .right ul li a.active {color: #e32518;}
+.Navbar .right ul i {color: #FFF; cursor: pointer;}
+
+.Navbar .left {width: 20%;}
+.Navbar .left h2 {margin: 10px 0; font-size: 30px;}
+.Navbar .left h2 a {color: #FFF}
+.Navbar .left h2 a span {color: #e32518;}
+
+.nav-links {position: fixed; width: 100%; background-color: #222222; top: 56px; left: 0; z-index: 1000; border-top: 1px solid #333; display: none;}
+.nav-links li {padding: 10px 20px; list-style: none;}
+.nav-links li:hover {background-color: #e32518;}
+.nav-links li a {color: #FFF; font-weight: bold; display: inline-block}
+.nav-links a {color: #FFF; cursor: pointer; margin-right: 20px; display: inline-block;}
+
+@media (max-width: 991px)
+{
+    .Navbar .left {display: none;}
+    .Navbar .right {width: 100%;}
+    .Navbar .right ul {text-align: left}
+    .Navbar .right ul li {padding: 15px 12px;}
+}
+
+@media (max-width: 767px)
+{
+    .Navbar .left {display: block;}
+    .Navbar .right ul {display: none;}
+    .Navbar .right .bar {display: block; align-items: left}
+}
+/*--------------------------- End Navbar --------------------------------*/
+
+/*--------------------------- Start Header  -------------------*/
+.header {background-image: url('../Photos/1.jpeg'); background-size: cover; position: relative; height: 100vh}
+.header .overlay {position: absolute; width: 100%; height: 100%; top: 0; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, .8); z-index: 2;}
+.header .body {color: #FFF; text-align: center;}
+.header .body h3 {font-size: 23px; color: #858585;}
+.header .body h1 {font-size: 50px; margin: 25px 0; line-height: 1.4;}
+.header .body h1 span {color: #e32518;}
+.header .body button {background: none; border: 1px solid #FFF; padding: 10px 20px; cursor: pointer; border-radius: 5px;}
+.header .body button a {color: #FFF; font-size: 14px;}
+.header .body button.one {border: 0;}
+.header .body button.one:hover a {color: #e32518;}
+.header .body button.two {border-color: #e32518;}
+.header .body button.two a {color: #e32518;}
+.header .body button.two:hover {background-color: #FFF; border-color: #fff;}
+
+@media (max-width: 991px)
+{
+    .header .body h3 {font-size: 20px;}
+    .header .body h1 {font-size: 40px;}
+}
+@media (max-width: 767px)
+{
+    .header .body h3 {font-size: 18px;}
+    .header .body h1 {font-size: 32px;}
+}
+/*--------------------------- End Header  ----------------------------*/
+
+
+/*------------------------- Start About ------------------------------*/
+.about {padding: 80px 0 50px 0; background-color: #f9f9f9;}
+.about .row {margin-top: 30px;}
+.about .box {margin: 50px 20px 30px 0;}
+.about .box h2 {font-size: 30px; color: #212529;}
+.about .box h2 span {color: #e32518;}
+.about .box h5 {color: #6e6b6b; font-size: 18px; margin: 15px 0;}
+.about .img-box {margin-bottom: 25px; box-shadow: 6px 0 38px rgba(20,20,20,0.10);}
+.about .img-box .img {width: 100%; height: 285px; }
+.about .img-box .img img {width: 100%; height: 100%; object-fit: cover; border-radius: 5px 5px 0 0;}
+.about .img-box .info {background-color: #FFF; padding: 15px;}
+.about .img-box .info h3 {font-size: 22px; color: #212529;}
+.about .img-box .info h3 i,
+.about .img-box .info h5 i {color: #6c6e71; font-size: 22px}
+.about .img-box .info h5 {font-size: 15px; color: #5c6062;}
+
+@media (max-width: 767px)
+{
+    .about .box {margin-bottom: 60px}
+    .about .box h5 {font-size: 16px}
+}
+/*------------------------- End About --------------------------------*/
+
+
+/*--------------------------- Start Member --------------------*/
+.member {background-color: #171819; text-align: center; padding: 50px 0;}
+.member h2 {font-size: 30px; color: #fff}
+.member h2 span {color: #e32518;}
+.member h6 {color: #72767b}
+.member button {border: 2px solid #e32518; background-color: #e32518; color: #FFF; padding: 10px 30px; margin-top: 20px; cursor: pointer; border-radius: 5px;}
+.member button:hover {background-color: #fff; color: #e32518;}
+
+.membership {position: fixed; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(0,0,0,.6); z-index: 100; display: none;}
+.membership .box {background-color: #FFF; width: 450px; margin: auto; border-radius: 5px; position: relative; padding: 30px 20px}
+.membership .box i {background-color: #e32518; color: #FFF; border-radius: 50%; width: 30px; height: 30px; padding-top: 5.5px; position: absolute; top: -15px; right: -15px; cursor: pointer;}
+.membership .box h2 {font-size: 30px; text-align: center; margin-bottom: 20px}
+.membership form .form-control {margin-bottom: 20px;}
+.membership form .btn {padding: 8px}
+.membership form .btn:hover {background-color: #e32518; border-color: #e32518}
+.membership form label a {color: #e32518;}
+@media(max-width: 767px)
+{
+    .membership .box {width: 400px}
+}
+/*--------------------------- End Member -----------------------*/
+
+
+/*--------------------------- Start Classes -----------------------*/
+.Classes {padding: 80px 0 30px 0; text-align: center; background-color: #f9f9f9;}
+.Classes p {display: block; width: 100%; margin: 10px 0; color: #72767b; text-align: center; font-size: 20px}
+.Classes h2 {color: #444; width: 100%; font-size: 40px; font-weight: bold; text-align: center;}
+.Classes .row {margin-top: 50px;}
+.Classes .row .box {margin-bottom: 30px; box-shadow: 6px 0 38px rgba(20,20,20,0.10);}
+.Classes .box .img {width: 100%; height: 195px; background-color: #FFF}
+.Classes .box .img img {width: 100%; height: 100%; object-fit: cover}
+.Classes .box .info {position: relative; width: 100%; background-color: #FFF; padding: 10px; text-align: left}
+.Classes .box .info span.price {position: absolute; top: 10px; right: 15px; color: #FFF; background-color: #e32518; border-radius: 50%; width: 50px; height: 50px; text-align: center; padding-top: 16px;}
+.Classes .box .info h4 {font-size: 23px; color: #444; font-weight: bold}
+.Classes .box .info h2 {font-size: 16px; color: #909090; text-align: left;}
+.Classes .box .info h2 span {color: #444}
+.Classes .box .info h6 {color: #727272; font-size: 15px;}
+/*--------------------------- End Classes --------------------------*/
+
+
+/*--------------------------- Start Tabel -----------------------*/
+.table {padding: 80px 0; text-align: center; background-color: #171819;}
+.table p {display: block; width: 100%; margin: 10px 0; color: #72767b; font-size: 20px}
+.table h2 {color: #444; width: 100%; font-size: 40px; font-weight: bold; color: #FFF}
+.table table {font-family: sans-serif; margin-top: 50px;}
+.table table tr td {border-color: #212122; vertical-align: middle; background-color: #171819; width: 200px}
+.table table tr:first-of-type td {background-color: #e32518; color: #FFF; font-weight: bold;}
+.table table tr td:first-of-type {background-color: #e32518; color: #FFF; width: 130px;}
+.table table tr td h5 {color: #FFF; font-size: 18px;}
+.table table tr td h6 {color: #909090; font-size: 15px; margin: 0;}
+/*--------------------------- End Tabel -----------------------*/
+
+
+/*--------------------------- Start Contact ---------------------*/
+.contact {padding: 80px 0;}
+.contact .box {margin-bottom: 30px; padding: 20px}
+.contact h2 {font-size: 30px; margin-bottom: 30px}
+.contact form .form-control {margin-bottom: 20px;}
+.contact form textarea {height: 120px;}
+.contact form .btn {padding: 10px;}
+.contact form .btn:hover {background-color: #e32518; border-color: #e32518}
+.contact h6 {font-size: 16px; color: #716d6d; margin-bottom: 20px}
+.contact h6 i {font-size: 22px; color: #e32518;}
+/*--------------------------- End Contact -----------------------*/
+
+/*--------------------------- Start Footer ----------------------*/
+.footer {display: flex; align-items: center; background-color: #171819; padding: 30px 0; color: #72767b; font-size: 18px;}
+.footer h5 {width: 50%;}
+.footer h5:first-of-type {text-align: right;}
+.footer h5:last-of-type {margin-left: 5px}
+.footer span {color: #e32518;}
+.footer i {color: red; font-size: 20px;}
+@media(max-width: 767px)
+{
+    .footer {font-size: 16px; display: block; text-align: center;}
+    .footer h5:first-of-type {text-align: center;}
+    .footer h5:last-of-type {margin: 0}
+    .footer h5 {width: 100%;}
+}
+/*--------------------------- End Footer ------------------------*/
+
+
+/* Global Style */
+a:hover {text-decoration: none}
+
